@@ -21,6 +21,7 @@ LinkedListStack<int> linkedListStack= new LinkedListStack<int>();
 linkedListStack.Push(1);
 linkedListStack.Push(2);
 linkedListStack.Push(3);
+Console.WriteLine("linked Stack place");
 Console.WriteLine(linkedListStack.Pop());
 Console.WriteLine(linkedListStack.GetTop());
 Console.WriteLine(linkedListStack.Length);
@@ -29,3 +30,31 @@ Console.WriteLine(linkedListStack.Length);
 
 Console.WriteLine(StackAlgo.IsBalancedParanthases("(2+5) + [44]"));
 Console.WriteLine(StackAlgo.IsBalancedParanthases("({{}})["));
+
+// queue section
+// cicular array queue section
+
+CircularArrayQueue<int> circularArrayQueue = new CircularArrayQueue<int>(6);
+circularArrayQueue.Enqueue(2);
+circularArrayQueue.Enqueue(3);
+circularArrayQueue.Enqueue(4);
+Console.WriteLine("queue sec -------------------------------------------");
+Console.WriteLine(circularArrayQueue.Dequeue());
+Console.WriteLine(circularArrayQueue.GetFront());
+Console.WriteLine(circularArrayQueue.GetRear());
+circularArrayQueue.Dequeue();
+circularArrayQueue.Dequeue();
+circularArrayQueue.Enqueue(5);
+Console.WriteLine(circularArrayQueue.GetFront());
+Console.WriteLine(circularArrayQueue.GetRear());
+Console.WriteLine(circularArrayQueue.QueueSearch(5));
+Console.WriteLine("linkedQueue section ..............");
+
+LinkedQueue<int> linkedQueue = new LinkedQueue<int>();
+linkedQueue.Enqueue(2);
+linkedQueue.Enqueue(3);
+linkedQueue.Enqueue(4);
+linkedQueue.Dequeue();
+linkedQueue.Dequeue();
+linkedQueue.Dequeue();
+linkedQueue.Enqueue(5);
