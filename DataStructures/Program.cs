@@ -58,3 +58,12 @@ linkedQueue.Dequeue();
 linkedQueue.Dequeue();
 linkedQueue.Dequeue();
 linkedQueue.Enqueue(5);
+// LinkedList space
+Console.WriteLine("Linked list section...........................");
+CustomLinkedList<int> customLinkedList = new CustomLinkedList<int>();
+customLinkedList.InsertAtFirst(2);
+customLinkedList.InsertAtFirst(3);
+customLinkedList.InsertAtFirst(4);
+customLinkedList.InsertAtLast(5);
+customLinkedList.InsertAtLast(6);
+customLinkedList.InsertAtPosition(3, 7);
